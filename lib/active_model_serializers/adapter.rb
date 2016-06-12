@@ -61,6 +61,7 @@ module ActiveModelSerializers
       # @return [ActiveModelSerializers::Adapter] subclass of Adapter
       # @raise  [UnknownAdapterError]
       def lookup(adapter)
+        adapter = :json_api
         # 1. return if is a class
         return adapter if adapter.is_a?(Class)
         adapter_name = adapter.to_s.underscore
