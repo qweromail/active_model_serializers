@@ -20,7 +20,7 @@ module ActiveModel
         end
 
         config.default_includes = '*'
-        config.adapter = :attributes
+        config.adapter = :json_api
         config.jsonapi_resource_type = :plural
         config.jsonapi_version = '1.0'
         config.jsonapi_toplevel_meta = {}
